@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #004d40;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.header-logo {
+    position: absolute;
+    top: 10px; /* например, 10 пикселей от верхнего края */
+    left: 10px; /* например, 10 пикселей от левого края */
+    width: 100px; /* ширина логотипа */
+    height: auto; /* автоматическое вычисление высоты для сохранения пропорций */
+    opacity: 0.7; /* сделаем логотип немного прозрачным, чтобы он не сливался с фоном */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004d40;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.main-zozh-blockquote {
+    font-style: italic;
+    color: #666666;
+    border-left: 5px solid #004d40;
+    padding-left: 10px;
+}
+
+ul {
+    margin-bottom: 15px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+sup {
+    vertical-align: super;
+}
+
+pre {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main-aside {
+    float: right;
+    width: 30%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px #999999;
+    padding: 10px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #004d40;
+    color: #ffffff;
+    text-align: center;
+}
+
+
