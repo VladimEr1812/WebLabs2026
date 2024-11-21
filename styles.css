@@ -1,0 +1,217 @@
+/* Для устройств с шириной экрана до 768px */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__nav {
+        margin-top: 10px;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .main__aside {
+        display: none;
+    }
+
+    .zozh__formula{
+        display: none;
+    }
+}
+
+/* Для устройств с шириной экрана от 769px до 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Для устройств с шириной экрана от 1025px и выше */
+@media screen and (min-width: 1025px) {
+    .main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004d40;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Стили для header */
+.header {
+    justify-content: space-between;
+    background-color: #004d40;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.header__title {
+    font-size: 40px;
+}
+
+.header-logo {
+    height: 50px;
+    width: auto;
+    padding-right: 10px;
+}
+
+.header__menu {
+    margin-top: 20px;
+}
+
+.menu__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu__item {
+    font-size: 26px;
+    background-color: #007f6a;
+    padding: 5px;
+    margin: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.menu__item:hover {
+    background-color: lightgray;
+}
+
+.menu__item.active{
+    background-color: lightgray;
+}
+
+.menu__link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Стили для main */
+.main {
+    padding: 20px;
+}
+
+/* Стили для раздела "Здоровый образ жизни" */
+.main__zozh {
+    margin-bottom: 20px;
+}
+
+.zozh__text {
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.zozh__blockquote {
+    font-style: italic;
+    font-size: 20px;
+    color: #000000;
+    background-color: #b4b4b4;
+    border-left: 5px solid #004d40;
+    padding-left: 10px;
+}
+
+.zozh__formula {
+    font-weight: bold;
+}
+
+/* Стили для раздела "Наши услуги" */
+.main__services {
+    margin-bottom: 20px;
+}
+
+.background-image {
+    background-image: url('sources/img/mainS.jpg'); /* Путь к вашей прозрачной картинке */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 100px; /* Добавляем отступы сверху и снизу */
+}
+
+.services__list {
+    list-style-type:symbols();
+    padding: 0;
+}
+
+.services__item {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Стили для aside */
+.main__aside {
+    float: right;
+    width: 30%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px #999999;
+    padding: 10px;
+}
+
+/* Стили для footer */
+.footer {
+    background-color: #004d40;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer__title {
+    font-size: 18px;
+}
+
+.footer__phone {
+    font-size: 16px;
+}
+
+/*Стили таблицы */
+.main-table {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333; /* Темнее фон для заголовка */
+    color: white; /* Белый цвет текста */
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Цвет фона для нечетных строк */
+}
+
+tr:nth-child(even) {
+    background-color: #ddd; /* Цвет фона для четных строк */
+}
