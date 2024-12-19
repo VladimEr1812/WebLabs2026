@@ -145,11 +145,11 @@ p {
 }
 
 .background-image {
-    background-image: url('sources/img/mainS.jpg'); /* Путь к вашей прозрачной картинке */
+    background-image: url('sources/img/mainS.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
-    padding: 100px; /* Добавляем отступы сверху и снизу */
+    padding: 100px;
 }
 
 .services__list {
@@ -204,16 +204,16 @@ th, td {
 }
 
 th {
-    background-color: #333; /* Темнее фон для заголовка */
-    color: white; /* Белый цвет текста */
+    background-color: #333;
+    color: white;
 }
 
 tr:nth-child(odd) {
-    background-color: #f2f2f2; /* Цвет фона для нечетных строк */
+    background-color: #f2f2f2;
 }
 
 tr:nth-child(even) {
-    background-color: #ddd; /* Цвет фона для четных строк */
+    background-color: #ddd;
 }
 
 /* Стили для кастомной таблицы*/
