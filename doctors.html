@@ -6,6 +6,7 @@
     <meta name="description" content="Информация о врачах клиники">
     <title>Врачи - Платная клиника "Здоровье"</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="scripts/stats.js" defer></script>
 </head>
 <body>
@@ -18,24 +19,67 @@
                 <li class="menu__item"><a href="index.html" class="menu__link">Домашняя страница</a></li>
                 <li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
                 <li class="menu__item"><a href="services.html" class="menu__link">Услуги</a></li>
-                <li class="menu__item"><a href="doctors.html" class="menu__link">Врачи</a></li>
-                <li class="menu__item"><a href="contact.html" class="menu__link">Личный кабинет</a></li>                
-                <li class="menu__item"><a href="constructor.html" class="menu__link">Медицинская таблица</a></li>
+                <li class="menu__item"><a href="doctors.html" class="menu__link">Врачи</a></li>              
+                <li class="menu__item"><a href="constructor.html" class="menu__link">Медицинская карта</a></li>
             </ul>
         </nav>
         <script src="scripts/menu.js"></script>
     </header>
     
-    <main>
-        <section>
-            <h2>Наши врачи</h2>
-            <p>Здесь вы можете разместить информацию о врачах вашей клиники.</p>
-        </section>
-    </main>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <h3>Иванов Иван Иванович</h3>
+                <p>Терапевт</p>
+                <p>Стаж работы: 10 лет</p>
+                <img src="sources/img/1.jpg" class="doctor-image">
+            </div>
+            <div class="swiper-slide">
+                <h3>Петров Петр Петрович</h3>
+                <p>Хирург</p>
+                <p>Стаж работы: 15 лет</p>
+                <img src="sources/img/2.jpg" class="doctor-image">
+            </div>
+            <div class="swiper-slide">
+                <h3>Денисов Денис Денисович</h3>
+                <p>Психиатр</p>
+                <p>Стаж работы: 22 года</p>
+                <img src="sources/img/3.webp" class="doctor-image">
+            </div>
+            <div class="swiper-slide">
+                <h3>Антонов Антон Антонович</h3>
+                <p>Стоматолог</p>
+                <p>Стаж работы: 8 лет</p>
+                <img src="sources/img/4.jpg" class="doctor-image">
+            </div>
+            <div class="swiper-slide">
+                <h3>Сергеев Сергей Сергеевич</h3>
+                <p>Гастроэнтеролог</p>
+                <p>Стаж работы: 12 лет</p>
+                <img src="sources/img/5.webp" class="doctor-image">
+            </div>
+        </div>
+        <!-- Навигация для пролистывания слайдов -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
     
     <footer class="footer">
         <h3 class="footer__title">Контактная информация</h3>
         <p class="footer__phone">Телефон: +7(777)777-77-77</p>
     </footer>
+
+    <!-- Подключение скрипта Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Инициализация Swiper
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
