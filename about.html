@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <h1 class="header__title">
-            <img src="sources\img\logo.png" alt="Логотип" class="header-logo">Частная клиника "Здоровье"
+            <img src="sources/img/logo.png" alt="Логотип" class="header-logo">Частная клиника "Здоровье"
         </h1>
         <nav class="header__menu">
             <ul class="menu__list">
@@ -27,10 +27,24 @@
     </header>
     
     
-    <main>
-        <section>
+    <main class="main">
+        <section id="about">
             <h2>О нашей клинике</h2>
-            <p>Здесь вы можете разместить информацию о вашей клинике.</p>
+            <p>
+                Наша клиника является ведущим медицинским учреждением в регионе, специализирующимся на оказании высококачественной медицинской помощи. Мы предлагаем широкий спектр услуг по диагностике, лечению и профилактике различных заболеваний.
+            </p>
+            <p>
+                Наши врачи - это опытные специалисты, прошедшие обучение в ведущих медицинских учебных заведениях страны. Мы используем только современное оборудование и последние медицинские достижения, чтобы обеспечить нашим пациентам качественное и эффективное лечение.
+            </p>
+        </section>
+
+        <section id="reviews">
+            <h2>Отзывы</h2>
+
+            <div id="reviewsContainer" class="reviews-container">
+                <!-- Сюда будут добавлены отзывы из JavaScript -->
+            </div>
+            <button id="refreshReviewsBtn">Обновить отзывы</button>            
         </section>
     </main>
     
@@ -38,5 +52,7 @@
         <h3 class="footer__title">Контактная информация</h3>
         <p class="footer__phone">Телефон: +7(777)777-77-77</p>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>

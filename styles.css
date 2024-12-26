@@ -267,3 +267,52 @@ button#resetDataButton:hover {
     width: 50%;
 }
 
+/* Стили для отзывов*/
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.review__author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review__body {
+    margin-top: 5px;
+}
+
+button#refreshReviewsBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#refreshReviewsBtn:hover {
+    background-color: #0056b3;
+}
