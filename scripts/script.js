@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const reviewElement = document.createElement('div');
             reviewElement.classList.add('review');
             reviewElement.innerHTML = `
-                <p class="review__author">${review.name}</p>
+                <p class="review__author">${review.email}</p>
                 <p class="review__body">${review.body}</p>
             `;
             reviewsContainer.appendChild(reviewElement);
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const reviewElement = document.createElement('div');
             reviewElement.classList.add('review');
             reviewElement.innerHTML = `
-                <p class="review__author">${review.name}</p>
+                <p class="review__author">${review.email}</p>
                 <p class="review__body">${review.body}</p>
             `;
             reviewsContainer.appendChild(reviewElement);
