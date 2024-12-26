@@ -251,6 +251,24 @@ button#resetDataButton:hover {
     background-color: #005e52;
 }
 
+button#refreshReviewsBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#refreshReviewsBtn:hover {
+    background-color: #0056b3;
+}
+
+
 .table-container {
     margin-top: 20px;
 }
@@ -300,19 +318,42 @@ button#resetDataButton:hover {
     margin-top: 5px;
 }
 
-button#refreshReviewsBtn {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+/* Стили swiper*/
+.swiper-container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-button#refreshReviewsBtn:hover {
-    background-color: #0056b3;
+.swiper-slide {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.doctor-image {
+    width: auto;
+    height: 300px;
+    margin-bottom: 10px;
 }
